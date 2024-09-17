@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Barcode Generator - ELECTRO Enterprises</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>ELECTRO Enterprises</h1>
+            <p>Your trusted partner in technology solutions</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <h2>Barcode Generator</h2>
+        <p>Enter the data you want to encode in a barcode:</p>
+        <div class="form-group">
+            <input type="text" id="inputvalue" placeholder="Enter barcode data" />
+            <button id="generateButton" onclick="barcode()">Generate Barcode</button>
+        </div>
+        <div class="result">
+            <img id="image" alt="Barcode will appear here" />
+            <button id="downloadButton" style="display: none;" onclick="download()">Download Barcode</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 ELECTRO Enterprises. All rights reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
